@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="desafio-estilo.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="icon" href="img/icoLogo.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<title>Encriptador</title>
+</head>
+<body >
+	<script type="text/javascript" src="desafio.js"></script>
+
+	<header>
+		<img src="img/logo.png" class="logo">
+	</header>
+
+	<main>
+			<h1 class="tituloPrincipal">Encriptador </h1>
+		<form>
+			<input type="text" autofocus title="Mensaje" onkeypress="return soloLetras(event)" id="idTexto"   class="inputTexto"  placeholder="Ingrese el texto aqui" required>		
+			
+		<div class="contenedor">
+			<img src="img/Muñeco.png" id="img">
+			<label class="textoUno" id="txtUno">Ningun mensaje fue encontrado</label>
+			<br>
+			<label class="textoDos" id="txtDos">Ingrese el texto que desee encriptar o desencriptar</label>
+
+			<!-- Contenido oculto-->
+			<textarea id="textArea" cols="32" rows="10" readonly >
+				
+			</textarea>	
+            <input type="button" value="Copiar" id="btnCopiar" class="copiar" onclick="copiado();">
+
+		</div>
+
+		<div class="botones">
+			<p class="nota">&#10082 Solo letras minúsculas y sin acentos</p>
+			<button type="button" class="encriptar" title="Encriptar" onclick="encriptar()" >Encriptar</button>
+			<button type="button" class="desencriptar"  title="Desencriptar" onclick="desencriptar()">Desencriptar</button>
+			<img src="img/icono.png" class="i-limpiar" title="Limpiar campos" onclick="limpiarCampos()">
+			
+		</div>
+	</form>		
+		
+	</main>
+
+	<footer>
+		<p class="pie">Pagina elaborada  con fines educativos por : Iván Yaír Gracía Luna</p>
+		<p>&#169 Copyright 2022</p>
+	</footer>
+
+</body>
+</html>
